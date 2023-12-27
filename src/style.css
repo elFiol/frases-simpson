@@ -1,0 +1,10 @@
+article {
+    border: 5px yellow solid;
+    border-radius: 5px;
+}
+#mensaje{
+    background: #fff;
+    text-align: center;
+    color: #111;
+    border-radius: 20px;
+}
