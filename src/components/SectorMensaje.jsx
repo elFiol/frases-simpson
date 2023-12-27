@@ -1,5 +1,6 @@
 import "../style.css";
 import moe from "../img/moe.png";
+import Mensaje from "./Mensaje";
 
 function SectorMensaje() {
   return (
@@ -9,6 +10,7 @@ function SectorMensaje() {
       </h2>
       <hr />
       <img src={moe} alt="moe" className="mx-auto d-block w-25 my-5" />
+      <Mensaje></Mensaje>
     </article>
   );
 }
