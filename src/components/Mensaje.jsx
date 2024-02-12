@@ -1,19 +1,24 @@
 import "../style.css";
-function Mensaje() {
+
+function Mensaje({ personaje }) {
   return (
-    <div id="mensaje" className="py-3 mb-4 container">
-      <p>
-        <b>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-          obcaecati molestias, non numquam sapiente eius corporis iure vitae
-          aspernatur expedita nam quod recusandae, nemo accusantium, a illum
-          magni! Pariatur, consequatur.
-        </b>
-      </p>
-      <p>
-        <i>~Moe Simpsom</i>
-      </p>
-    </div>
+    <article className="container">
+      <h2 className="text-center my-3">
+        <b>{personaje.character}</b>
+      </h2>
+      <hr />
+      <img src={personaje.image} alt={personaje.character} className="mx-auto d-block w-25 my-5" />
+      <div id="mensaje" className="py-3 mb-4 container">
+        <p>
+          <b>
+            {personaje.quote}
+          </b>
+        </p>
+        <p>
+          <i>~{personaje.character}</i>
+        </p>
+      </div>
+    </article>
   );
 }
 
